@@ -41,10 +41,11 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
+        <p class="copyright">
         {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>;
         {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <a href="https://www.grip.unina.it">www.grip.unina.it</a></p>
       </footer>
     </div>
 
