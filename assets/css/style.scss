@@ -2,3 +2,39 @@
 ---
 
 @import "jekyll-theme-slate";
+#paper_title {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: #111 0px 0px 10px;
+    text-align: center;
+}
+#paper_authors {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+#paper_affiliations {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+sup {
+    top: -.5em;
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.inner {
+    max-width: 720px;
+}
