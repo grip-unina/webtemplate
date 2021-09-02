@@ -93,6 +93,11 @@
           <a href="{{page.links.data}}" style="text-decoration:none;"><i class="fa fa-file-archive-o"></i> Data </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>
           {% endif %}
+          {% if page.links.video %}
+		  <li style="float: left;">
+          <a href="{{page.links.video}}" style="text-decoration:none;"><i class="fa fa-file-video-o"></i> Video </a>
+          </li>
+          {% endif %}
           {% if page.links.code %}
 		  <li style="float: left;">
           <a href="{{page.links.code}}" style="text-decoration:none;"><i class="fa fa-file-archive-o"></i> Code </a>
