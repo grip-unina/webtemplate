@@ -7,15 +7,22 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 {% seo %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-	<div style="height: 5px; background-color: var(--blue);"></div>
-        <header class="inner">
+        <header class="container pb-3">
+          <a href="#" class="col-auto d-flex align-items-center text-dark text-decoration-none">
+            <img class="mx-2 my-logo-icon" src={{'/assets/images/gufo.png' | relative_url}}>
+            <div class="my-logo mb-0">GRIP</div>
+          </a>
 		  {% if page.github_url  %}
 			<a id="forkme_banner" href="{{ page.github_url }}">View on GitHub</a>
 		  {% else %}
@@ -70,8 +77,8 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div id="main_content_wrap" class="outer container px-4">
+      <section id="main_content" class="inner my-container">
         <!-- content -->
         {{ content }}
       

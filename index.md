@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: paper
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

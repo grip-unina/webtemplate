@@ -2,12 +2,43 @@
 ---
 
 @import "jekyll-theme-slate";
+
+:root {
+    --bs-body-font-family: 'Rubik', sans-serif !important;
+    --open-sans: 'Open Sans', sans-serif;
+    --rubik: 'Rubik', sans-serif;
+    --white: #ffffff;
+    --blue: #0888ef;
+    --light-blue: #5bbcff;
+    --dark-blue: #445486;
+    --black: #1d1d1d;
+    --red: #ec3939;
+    --yellow: #ffab03;
+    --gray: #9d9d9d;
+    --light-gray: #efefef;
+    --dark-gray: #646464;
+    --blue-gray: #bcc4d3;
+    --gold: #deb657;
+}
+
+body {
+    font-size: 16px !important;
+    font-family: var(--rubik) !important;
+    line-height: 1.6 !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.my-container{
+    padding-left: 8rem !important;
+    padding-right: 8rem !important;
+}
+
 #paper_title {
     margin: 0;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: #111 0px 0px 10px;
+    font-size: 33px;
+    color: var(--dark-gray);
+    font-family: var(--rubik) !important;
+    font-weight: 400;
     text-align: center;
 }
 #paper_authors {
@@ -19,6 +50,17 @@
     margin: 0;
     color: #fff;
     text-align: center;
+}
+
+#header_wrap{
+    background: white !important;
+    border-bottom: 1px solid var(--light-gray);
+    border-top: 5px solid var(--blue);
+}
+#main_content_wrap {
+    background: #ffffff;
+    border-top: none;
+    border-bottom: none;
 }
 p {
     text-align: justify;
@@ -36,5 +78,25 @@ sup {
     vertical-align: baseline;
 }
 .inner {
-    max-width: 780px;
+    max-width: none;
+}
+
+.my-logo{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif !important;
+    font-size: 40px;
+    color: var(--blue);
+    font-weight: 500;
+    align-text: center;
+}
+.my-logo-icon{
+    height: 50px;
+}
+
+img.my-logo-icon{
+    position: relative;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    border: none;
+    box-shadow: none;
 }
