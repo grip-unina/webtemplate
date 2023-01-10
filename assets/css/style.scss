@@ -32,6 +32,28 @@ body {
     padding-left: 8rem !important;
     padding-right: 8rem !important;
 }
+@media (max-width: 1200px){
+    .my-container{
+        padding-left:  6rem !important;
+        padding-right: 6rem !important;
+    }
+}
+
+@media (max-width: 992px){
+    .my-container{
+        padding-top:   2rem !important;
+        padding-left:  6rem !important;
+        padding-right: 6rem !important;
+    }
+}
+
+@media (max-width: 576px){
+    .my-container{
+        padding-top:   2rem !important;
+        padding-left:  2rem !important;
+        padding-right: 2rem !important;
+    }
+}
 
 #paper_title {
     margin: 0;
