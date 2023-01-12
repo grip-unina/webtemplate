@@ -79,17 +79,16 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer container px-4">
       <section id="main_content" class="inner my-container">
-        <!-- content -->
-        {{ content }}
       
         {% if page.links %}
         <!-- Links -->
-        <h3 id="paper_links"> Links </h3>
+	      
         <ul style="list-style-type:none">
 		  {% if page.links.arxiv %}
 		  <li style="float: left;">
           <a href="{{page.links.arxiv}}" style="text-decoration:none;"><i class="fa fa-file-pdf-o"></i> Arxiv </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>
+		
           {% endif %}
 		  {% if page.links.paper %}
 		  <li style="float: left;">
@@ -114,6 +113,9 @@
         </ul>
 		<p>&nbsp;&nbsp;&nbsp;</p>
         {% endif %}
+	    
+        <!-- content -->
+        {{ content }}
        </section>
     </div>
 
