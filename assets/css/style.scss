@@ -73,6 +73,16 @@ body {
     color: var(--dark-gray);
     text-align: center;
 }
+#paper_links {
+    margin: 0;
+    color: var(--dark-gray);
+    text-align: center;
+}
+
+.pb-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 0rem!important;
+}
 
 #header_wrap{
     background: white !important;
