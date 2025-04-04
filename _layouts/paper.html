@@ -63,36 +63,36 @@
 		  
 	  {% if page.links.code %}
           <li style="float: left;">
-          <a href="{{page.links.code}}" style="text-decoration:none;"><i class="fa fa-github"></i> Code </a>
+          <a href="{{page.links.code}}" style="background-color: #222222; text-decoration:none;" class="p-2 mx-4 rounded-pill"><i class="fa fa-github"></i> Code </a>
           </li>
           {% endif %}
 	  
           {% if page.links.arxiv %}
           <li style="float: left;">
-          <a href="{{page.links.arxiv}}" style="text-decoration:none;"><i class="ai ai-arxiv"></i> Paper </a>
+          <a href="{{page.links.arxiv}}" style="background-color: #B31B1B; text-decoration:none;" class="p-2 mx-4 rounded-pill"><i class="ai ai-arxiv"></i> Paper </a>
           </li>
           {% endif %}
           
           {% if page.links.paper %}
           <li style="float: left;">
-          <a href="{{page.links.paper}}" style="text-decoration:none;"><i class="fa fa-file-pdf-o"></i> Paper </a>
+          <a href="{{page.links.paper}}" style="background-color: #B31B1B; text-decoration:none;" class="p-2 mx-4 rounded-pill"><i class="fa fa-file-pdf-o"></i> Paper </a>
           </li>
           {% endif %}
 
           {% if page.links.data %}
           <li style="float: left;">
-          <a href="{{page.links.data}}" style="text-decoration:none;"><i class="fa fa-file-archive-o"></i> Data </a>
+          <a href="{{page.links.data}}" style="background-color: #ffab03; text-decoration:none;" class="p-2 mx-4 rounded-pill"><i class="fa fa-file-archive-o"></i> Data </a>
           </li>
           {% endif %}
           
           {% if page.links.video %}
           <li style="float: left;">
-          <a href="{{page.links.video}}" style="text-decoration:none;"><i class="fa fa-file-video-o"></i> Video </a>
+          <a href="{{page.links.video}}" style="background-color: #B31B1B; text-decoration:none;" class="p-2 mx-4 rounded-pill"><i class="fa fa-file-video-o"></i> Video </a>
           </li>
           {% endif %}
 
           <li style="float: left;">
-          <a href="https://www.grip.unina.it" style="background-color: #3D3D3D; text-decoration:none;" class="p-2 rounded-pill"> 
+          <a href="https://www.grip.unina.it" style="background-color: #3D3D3D; text-decoration:none;" class="p-2 mx-4 rounded-pill"> 
   		<img src={{'/assets/images/grip.svg' | relative_url}} alt="GRIP" height="28">
 	  </a>
           </li>
