@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 {% seo %}
@@ -18,26 +19,12 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="container pb-3">
-		<!--
-          <a href="#" class="col-auto d-flex align-items-center text-dark text-decoration-none">
-            <img class="mx-2 my-logo-icon" src={{'/assets/images/gufo.png' | relative_url}}>
-            <div class="my-logo mb-0">GRIP</div>
-          </a>
-          {% if page.github_url  %}
-             <a id="forkme_banner" href="{{ page.github_url }}">View on GitHub</a>
-          {% else %}
-            {% if site.github.is_project_page %}
-              <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
-            {% endif %}
-          {% endif %}
-          -->
-	
+        <header class="container pb-3">	
           <!-- Title -->
           {% if page.paper %}
-          <h1 id="paper_title">{{ page.paper }}</h1>
+          <h1 id="paper_title" class="py-3">{{ page.paper }}</h1>
           {% else %}
-          <h1 id="paper_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 id="paper_title" class="py-3">{{ site.title | default: site.github.repository_name }}</h1>
           {% endif %}
           
           {% if page.authors %}
@@ -49,7 +36,6 @@
                 {% if author.index %}
                 <sup>{{author.index}}</sup>
                 {% endif %}
-                &nbsp;&nbsp;&nbsp;&nbsp;
           {% endfor %}
                 <!-- </b> </i> </small> </div> -->
           </div>
@@ -69,44 +55,46 @@
                 <!-- </i> </small> </div> -->
           </div>
           {% endif %}
+
 		
-          {% if page.links %}
           <!-- Links -->
           <div id="paper_links" style="margin-bottom:0px; text-align:center">
           <ul style="list-style-type:none; display: inline-block; padding-left: 0rem; margin-bottom:0px;">
-          
+		  
+	  {% if page.links.code %}
+          <li style="float: left;">
+          <a href="{{page.links.code}}" style="text-decoration:none;"><i class="fa fa-github"></i> Code </a>
+          </li>
+          {% endif %}
+	  
           {% if page.links.arxiv %}
           <li style="float: left;">
-          <a href="{{page.links.arxiv}}" style="text-decoration:none;"><i class="fa fa-file-pdf-o"></i> Arxiv </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="{{page.links.arxiv}}" style="text-decoration:none;"><i class="ai ai-arxiv"></i> Paper </a>
           {% endif %}
           
           {% if page.links.paper %}
           <li style="float: left;">
           <a href="{{page.links.paper}}" style="text-decoration:none;"><i class="fa fa-file-pdf-o"></i> Paper </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>
-          {% endif %}
-          
+
           {% if page.links.data %}
           <li style="float: left;">
           <a href="{{page.links.data}}" style="text-decoration:none;"><i class="fa fa-file-archive-o"></i> Data </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>
           {% endif %}
           
           {% if page.links.video %}
           <li style="float: left;">
           <a href="{{page.links.video}}" style="text-decoration:none;"><i class="fa fa-file-video-o"></i> Video </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </li>
           {% endif %}
-          
-          {% if page.links.code %}
+
           <li style="float: left;">
-          <a href="{{page.links.code}}" style="text-decoration:none;"><i class="fa fa-file-archive-o"></i> Code </a>
+          <a href="https://www.grip.unina.it" style="background-color: #3D3D3D; text-decoration:none;" class="p-2 rounded-pill"> 
+  		<img src={{'/assets/images/grip.svg' | relative_url}} alt="GRIP" height="28">
+	  </a>
           </li>
-          {% endif %}
+          
           
         </ul>
 	</div>
